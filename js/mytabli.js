@@ -58,13 +58,13 @@ function login_to_game() {
 	draw_empty_board(p_color);
 	// fill_board();
 	
-	/* $.ajax({url: "chess.php/players/"+p_color, 
+	$.ajax({url: "tabli.php/players/"+p_color, 
 			method: 'PUT',
 			dataType: "json",
 			headers: {"X-Token": me.token},
 			contentType: 'application/json',
 			data: JSON.stringify( {username: $('#username').val(), piece_color: p_color}),
 			success: login_result,
-			error: login_error}); */
+			error: login_error});
 }
 
